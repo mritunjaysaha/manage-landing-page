@@ -1,0 +1,26 @@
+.navbar {
+    height: 10vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $desktop-padding-side;
+    .logo {
+        width: 10vw;
+        height: 4vh;
+        background-image: url(../assets/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .navbar-mid-contents {
+        display: flex;
+        flex-flow: row;
+
+        p {
+            padding: 0 1em;
+            margin: 0;
+        }
+    }
+}

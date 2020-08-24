@@ -1,7 +1,11 @@
 import React from "react";
-
+import Navbar from "../src/components/nav";
 function LandingPage() {
-    return <h1>Manage Landing Page</h1>;
+    return (
+        <>
+            <Navbar />
+        </>
+    );
 }
 
 export default LandingPage;
