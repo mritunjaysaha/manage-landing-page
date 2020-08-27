@@ -1,5 +1,5 @@
 .navbar {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -21,6 +21,8 @@
         p {
             padding: 0 1em;
             margin: 0;
+            color: $VeryDarkBlue;
+            font-weight: 500;
         }
     }
 }

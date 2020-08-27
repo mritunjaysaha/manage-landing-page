@@ -1,7 +1,7 @@
 .landing-page {
     display: flex;
     flex-flow: row nowrap;
-    height: 90vh;
+    height: 85vh;
 }
 
 .landing-page-left {
@@ -22,6 +22,8 @@
     }
 }
 .landing-page-right {
-    background: #f00;
     width: 50vw;
+    background-image: url(../assets/illustration-intro.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
 }
