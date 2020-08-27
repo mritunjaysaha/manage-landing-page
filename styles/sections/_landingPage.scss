@@ -1,0 +1,27 @@
+.landing-page {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 90vh;
+}
+
+.landing-page-left {
+    width: 50vw;
+    padding: 15vh 8vw;
+    h1 {
+        line-height: 1.25em;
+        font-size: 3em;
+        margin: 0.5em 0;
+        color: $VeryDarkBlue;
+    }
+    p {
+        font-size: 1.15em;
+        padding-right: 8vw;
+        line-height: 1.5em;
+        padding-bottom: 1em;
+        color: $DarkGrayishBlue;
+    }
+}
+.landing-page-right {
+    background: #f00;
+    width: 50vw;
+}
