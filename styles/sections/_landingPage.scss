@@ -1,18 +1,13 @@
-.landing-page {
+.page {
     display: flex;
     flex-flow: row nowrap;
-    height: 85vh;
-}
 
-.landing-page-left {
-    width: 50vw;
-    padding: 15vh 8vw;
     h1 {
         line-height: 1.25em;
-        font-size: 3em;
         margin: 0.5em 0;
         color: $VeryDarkBlue;
     }
+
     p {
         font-size: 1.15em;
         padding-right: 8vw;
@@ -21,9 +16,44 @@
         color: $DarkGrayishBlue;
     }
 }
-.landing-page-right {
+
+.landing.page {
+    height: 85vh;
+}
+.page-left {
     width: 50vw;
+    padding: 15vh 8vw;
+}
+.page-right {
+    width: 50vw;
+}
+.landing.page-right {
     background-image: url(../assets/illustration-intro.svg);
     background-repeat: no-repeat;
     background-position: center left;
+}
+.landing {
+    h1 {
+        font-size: 3em;
+    }
+}
+.about {
+    // height: 60vh;
+}
+.about.page-left {
+    padding: 10vh 4vw 10vh 8vw;
+}
+.about.page-right {
+    width: 50vw;
+    // background: #ff0;
+    padding: 12vh 8vw 10vw 0vw;
+}
+.about {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        margin: 0 4vw 0 0;
+    }
 }

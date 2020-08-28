@@ -1,15 +1,20 @@
 import React from "react";
 import Navbar from "../src/components/nav";
-import LandingPageSection from "../src/sections/landingPage";
-function LandingPage() {
+import LandingPage from "../src/sections/landingPage";
+import AboutPage from "../src/sections/aboutPage";
+
+function Index() {
     return (
         <>
             <section className="section-1">
                 <Navbar />
-                <LandingPageSection />
+                <LandingPage />
+            </section>
+            <section>
+                <AboutPage />
             </section>
         </>
     );
 }
 
-export default LandingPage;
+export default Index;
