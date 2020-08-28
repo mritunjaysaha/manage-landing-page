@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/buttons";
 
-export default function LandingPageSection() {
+export default function LandingPage() {
     return (
         <section className="landing page">
             <article className="landing page-left">

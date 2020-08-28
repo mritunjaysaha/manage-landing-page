@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../src/components/nav";
 import LandingPage from "../src/sections/landingPage";
 import AboutPage from "../src/sections/aboutPage";
+import TestimonialPage from "../src/sections/testimonialsPage";
 
 function Index() {
     return (
@@ -12,6 +13,7 @@ function Index() {
             </section>
             <section>
                 <AboutPage />
+                <TestimonialPage />
             </section>
         </>
     );
