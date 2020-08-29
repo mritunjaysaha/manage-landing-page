@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Card({ id, header, text }) {
-    console.log(id);
-
     return (
         <article className="cards">
             <div className="tag">
