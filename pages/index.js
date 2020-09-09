@@ -4,7 +4,7 @@ import LandingPage from "../src/sections/landingPage";
 import AboutPage from "../src/sections/aboutPage";
 import TestimonialPage from "../src/sections/testimonialsPage";
 import Banner from "../src/sections/banner";
-
+import Footer from "../src/sections/footerSection";
 const testimonialData = [
     {
         id: 1,
@@ -44,6 +44,7 @@ function Index() {
                 <TestimonialPage data={testimonialData} />
             </section>
             <Banner />
+            <Footer />
         </>
     );
 }

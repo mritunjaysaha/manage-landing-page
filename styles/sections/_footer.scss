@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh $desktop-padding-side;
+    background: $VeryDarkBlue;
+    color: $VeryLightGray;
+    section {
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+    }
+}

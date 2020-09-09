@@ -1,0 +1,9 @@
+.input {
+    border-radius: $radius;
+    height: 3em;
+    margin-right: 1em;
+
+    &::placeholder {
+        padding-left: 1em;
+    }
+}
