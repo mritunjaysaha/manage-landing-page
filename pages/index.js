@@ -3,6 +3,7 @@ import Navbar from "../src/components/nav";
 import LandingPage from "../src/sections/landingPage";
 import AboutPage from "../src/sections/aboutPage";
 import TestimonialPage from "../src/sections/testimonialsPage";
+import Banner from "../src/sections/banner";
 
 const testimonialData = [
     {
@@ -42,6 +43,7 @@ function Index() {
                 <AboutPage />
                 <TestimonialPage data={testimonialData} />
             </section>
+            <Banner />
         </>
     );
 }

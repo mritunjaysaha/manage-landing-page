@@ -5,3 +5,9 @@
     color: $VeryLightGray;
     padding: 1em 2em;
 }
+
+.invert-color {
+    color: $BrightRed;
+    background: $VeryLightGray;
+    font-weight: 600;
+}
