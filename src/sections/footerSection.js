@@ -1,6 +1,14 @@
 import React from "react";
 import Input from "../components/input";
 import Button from "../components/buttons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutubeSquare,
+    faFacebookSquare,
+    faTwitter,
+    faPinterest,
+    faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     return (
@@ -31,7 +39,13 @@ export default function Footer() {
                         </g>
                     </svg>
                 </div>
-                <div className="social-logo"></div>
+                <div className="social-logo">
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                    <FontAwesomeIcon icon={faYoutubeSquare} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faPinterest} />
+                    <FontAwesomeIcon icon={faInstagram} />
+                </div>
             </section>
             <section>
                 <p>Home</p>
@@ -49,7 +63,9 @@ export default function Footer() {
                     <Input type="text" placeholder="Updates in your inbox…" />
                     <Button text="Go" />
                 </div>
-                <p>&copy; Copyright 2020. All Rights Reserved</p>
+                <p className="footer-copyright">
+                    &copy; Copyright 2020. All Rights Reserved
+                </p>
             </section>
         </footer>
     );

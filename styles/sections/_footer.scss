@@ -1,12 +1,47 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 4vh $desktop-padding-side;
+    padding: 8vh $desktop-padding-side;
     background: $VeryDarkBlue;
     color: $VeryLightGray;
     section {
         display: flex;
         flex-direction: column;
-        // text-align: center;
+
+        p {
+            cursor: pointer;
+            transition: $transitionEl;
+            &:hover {
+                color: $BrightRed;
+            }
+        }
+
+        &:first-child {
+            padding: 1em 0;
+            justify-content: space-between;
+
+            .social-logo {
+                display: flex;
+                justify-content: space-between;
+
+                svg {
+                    transition: 0.5s ease-in;
+                    cursor: pointer;
+                    &:hover {
+                        color: $BrightRed;
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            justify-content: space-between;
+            .footer-copyright {
+                color: $DarkGrayishBlue;
+                text-align: right;
+                font-size: 0.8em;
+                cursor: auto;
+            }
+        }
     }
 }

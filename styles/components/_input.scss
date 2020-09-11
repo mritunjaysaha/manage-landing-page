@@ -1,9 +1,16 @@
 .input {
     border-radius: $radius;
     height: 3em;
+    width: 16em;
+    font-size: 0.8em;
     margin-right: 1em;
+    border: none;
+    color: $BrightRed;
+    padding-left: 1em;
 
-    &::placeholder {
-        padding-left: 1em;
+    &:focus {
+        outline: none;
+        border: 2px solid $BrightRed;
+        border-radius: $radius;
     }
 }

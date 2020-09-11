@@ -23,6 +23,11 @@
             margin: 0;
             color: $VeryDarkBlue;
             font-weight: 500;
+            cursor: pointer;
+            transition: $transitionEl;
+            &:hover {
+                opacity: $opacityEl;
+            }
         }
     }
 }
