@@ -52,9 +52,10 @@
         width: 0.5em;
 
         border-radius: 50%;
-    }
-}
 
-.active {
-    background: $DarkBlue !important;
+        &:hover,
+        &:focus {
+            background: $DarkBlue !important;
+        }
+    }
 }

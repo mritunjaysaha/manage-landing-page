@@ -3,16 +3,13 @@ import Button from "../components/buttons";
 
 function Testiomonials({ data }) {
     const [current, setCurrent] = useState(data[0]);
-    const [active, setActive] = useState(0);
+
     function handleSetClick(e) {
         const selected = e.target.dataset["testimonial"];
-
+        console.log(selected);
         setCurrent(data[selected]);
-
-        document
-            .querySelector(`span[data-testimonial='${selected}']`)
-            .classList.add("active");
     }
+
     return (
         <>
             <section className="testimonials-cards">

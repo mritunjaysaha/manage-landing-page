@@ -11,6 +11,10 @@
     &:hover {
         opacity: $opacityEl;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .invert-color {
