@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  *
  * @param {String} text prop will place the text for the button

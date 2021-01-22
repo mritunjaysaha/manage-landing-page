@@ -33,7 +33,7 @@ function Testimonials() {
     const items = [];
     for (let i = 0; i < testimonialData.length; i++) {
         items.push(
-            <div data-value={i}>
+            <div className="testimonials-cards-div" data-value={i}>
                 <Image
                     src={`/${testimonialData[i].img}`}
                     alt={testimonialData[i].name}
@@ -47,17 +47,19 @@ function Testimonials() {
     }
 
     const responsive = {
-        0: { items: 1 },
+        0: { items: 2 },
     };
 
     const Carousel = () => (
-        <AliceCarousel mouseTracking items={items} responsive={responsive} />
+        <AliceCarousel
+            className="alice-carousel"
+            mouseTracking
+            infinite="true"
+            items={items}
+            responsive={responsive}
+        />
     );
-    return (
-        <>
-            <Carousel></Carousel>
-        </>
-    );
+    return <Carousel></Carousel>;
 }
 
 export default function TestimonialPage() {
