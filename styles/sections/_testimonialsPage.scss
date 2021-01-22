@@ -17,13 +17,25 @@
 .alice-carousel {
     padding-bottom: 2em;
 }
+
+.alice-carousel__dots {
+    display: none;
+}
+.alice-carousel__prev-btn-wrapper,
+.alice-carousel__next-btn-wrapper {
+    font-size: 2em;
+
+    p {
+        color: $DarkGrayishBlue;
+    }
+}
+
 .testimonials-cards-div {
     background-color: $VeryLightGray;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    // width: 30em;
     margin: 4em 2em 0 2em;
     text-align: center;
     padding: 0 1em 1em 1em;
