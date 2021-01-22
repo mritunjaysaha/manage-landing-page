@@ -5,32 +5,6 @@ import AboutPage from "../src/sections/aboutPage";
 import TestimonialPage from "../src/sections/testimonialsPage";
 import Banner from "../src/sections/banner";
 import Footer from "../src/sections/footerSection";
-const testimonialData = {
-    0: {
-        img: "/avatar-anisha.png",
-        name: "Anisha Li",
-        text:
-            "“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”",
-    },
-    1: {
-        img: "/avatar-ali.png",
-        name: "Ali Bravo",
-        text:
-            "“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”",
-    },
-    2: {
-        img: "/avatar-richard.png",
-        name: "Richard Watts",
-        text:
-            "“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”",
-    },
-    3: {
-        img: "/avatar-shanai.png",
-        name: "Shanai Gough",
-        text:
-            "“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”",
-    },
-};
 
 function Index() {
     return (
@@ -41,7 +15,7 @@ function Index() {
             </section>
             <section>
                 <AboutPage />
-                <TestimonialPage data={testimonialData} />
+                <TestimonialPage />
             </section>
             <Banner />
             <Footer />
