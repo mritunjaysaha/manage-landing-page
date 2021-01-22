@@ -1,37 +1,42 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "../components/buttons";
+// import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Image from "next/image";
 
 function Testiomonials({ data }) {
-    const [current, setCurrent] = useState(data[0]);
+    // const [current, setCurrent] = useState(data[0]);
 
-    function handleSetClick(e) {
-        const selected = e.target.dataset["testimonial"];
-        console.log(selected);
-        setCurrent(data[selected]);
-    }
+    // function handleSetClick(e) {
+    //     const selected = e.target.dataset["testimonial"];
+    //     console.log(selected);
+    //     setCurrent(data[selected]);
+    // }
 
+    // return (
+    //     <>
+    //         <section className="testimonials-cards">
+    //             <div className="dp"></div>
+    //             <h5>{current.name}</h5>
+    //             <p>{current.text}</p>
+    //         </section>
+    //         <section className="span-testimonials-container">
+    //             {Object.keys(data).map((index) => {
+    //                 {
+    //                     return (
+    //                         <span
+    //                             className="span-testimonials-cards"
+    //                             onClick={(e) => handleSetClick(e)}
+    //                             data-testimonial={index}
+    //                             key={index}
+    //                         />
+    //                     );
+    //                 }
+    //             })}
+    //         </section>
+    //     </>
+    // );
     return (
-        <>
-            <section className="testimonials-cards">
-                <div className="dp"></div>
-                <h5>{current.name}</h5>
-                <p>{current.text}</p>
-            </section>
-            <section className="span-testimonials-container">
-                {Object.keys(data).map((index) => {
-                    {
-                        return (
-                            <span
-                                className="span-testimonials-cards"
-                                onClick={(e) => handleSetClick(e)}
-                                data-testimonial={index}
-                                key={index}
-                            />
-                        );
-                    }
-                })}
-            </section>
-        </>
+        <Image src="/avatar-richard.png" alt="temp" width={400} height={400} />
     );
 }
 
