@@ -5,7 +5,7 @@ export default function LandingPage() {
     return (
         <section className="landing page">
             <article className="landing page-left">
-                <h1>Bring everyone toghether to build better products.</h1>
+                <h1>Bring everyone together to build better products.</h1>
                 <p>
                     Manage makes it simple for software teams to plan day-to-day
                     tasks while keeping the larger team goals in view.
