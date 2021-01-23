@@ -6,13 +6,13 @@ export default function Navbar() {
             <nav className="navbar">
                 <div className="logo"></div>
 
-                <div className="navbar-mid-contents">
-                    <p>Pricing</p>
-                    <p>Product</p>
-                    <p>About Us</p>
-                    <p>Careers</p>
-                    <p>Community</p>
-                </div>
+                <ul className="navbar-mid-contents">
+                    <li>Pricing</li>
+                    <li>Product</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Community</li>
+                </ul>
 
                 <Button text="Get Started" />
             </nav>
