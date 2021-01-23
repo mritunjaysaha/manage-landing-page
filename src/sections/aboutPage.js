@@ -11,7 +11,7 @@ export default function AboutPage() {
         },
     ];
     return (
-        <section className="page">
+        <section className="about">
             <article className="about page-left">
                 <h1>What’s different about Manage?</h1>
                 <p>

@@ -1,4 +1,10 @@
 .page {
+}
+
+.landing {
+    display: flex;
+    flex-flow: row;
+    height: 85vh;
     h1 {
         line-height: 1.25em;
         margin: 0.5em 0;
@@ -9,19 +15,18 @@
         font-size: 1.15em;
         padding-right: 8vw;
         line-height: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: 2em;
         color: $DarkGrayishBlue;
     }
-}
-
-.landing {
-    display: flex;
-    flex-flow: row;
-    height: 85vh;
-
     .page-left {
+        display: flex;
+        flex-direction: column;
         width: 50vw;
         padding: 15vh 8vw;
+
+        .button {
+            width: max-content;
+        }
     }
 
     .page-right {
