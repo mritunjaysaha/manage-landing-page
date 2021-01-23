@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
     return (
-        <section className="landing page">
+        <section className="landing">
             <article className="landing page-left">
                 <h1>Bring everyone together to build better products.</h1>
                 <p>

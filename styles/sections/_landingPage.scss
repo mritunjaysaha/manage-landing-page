@@ -1,7 +1,4 @@
 .page {
-    display: flex;
-    flex-flow: row;
-
     h1 {
         line-height: 1.25em;
         margin: 0.5em 0;
@@ -18,9 +15,10 @@
 }
 
 .landing {
-    .page {
-        height: 85vh;
-    }
+    display: flex;
+    flex-flow: row;
+    height: 85vh;
+
     .page-left {
         width: 50vw;
         padding: 15vh 8vw;
@@ -39,9 +37,9 @@
 @media only screen and (max-width: 767px) {
     .page {
         width: 100vw;
-        flex-direction: column-reverse;
     }
     .landing {
+        flex-direction: column-reverse;
         .page-right {
             background-position: center top;
             background-size: 100%;
@@ -51,16 +49,23 @@
         }
 
         .page-left {
+            display: flex;
+            flex-direction: column;
             width: 92vw;
             margin: 0 auto;
             padding: 0;
             text-align: center;
+            align-items: center;
             h1 {
                 font-size: 2.2em;
             }
             p {
                 font-size: 0.9em;
                 padding-bottom: 2em;
+            }
+
+            .button {
+                width: max-content;
             }
         }
 
