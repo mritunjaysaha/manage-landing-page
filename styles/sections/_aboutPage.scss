@@ -8,6 +8,7 @@
     p {
         font-size: 1em;
         margin: 0 4vw 0 0;
+        color: $DarkGrayishBlue;
     }
 
     .page-left,
@@ -30,5 +31,29 @@
     .about {
         display: flex;
         flex-direction: column;
+
+        .page-left {
+            display: flex;
+            flex-direction: column;
+            width: 92vw;
+            margin: 4em auto 0 auto;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+                padding: 1em 0.5em;
+            }
+        }
+
+        .page-right {
+            padding: 0;
+            margin: 2em 0 2em 1em;
+        }
     }
 }

@@ -12,6 +12,10 @@
         margin: 0 !important;
     }
 
+    h4 {
+        color: $DarkBlue;
+    }
+
     .tag {
         width: 8em;
         margin-right: 1em;
@@ -35,6 +39,48 @@
 
         .contents-text {
             line-height: 1.5em !important;
+        }
+    }
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .id-header-div {
+        display: flex;
+        text-align: left;
+        vertical-align: middle;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1em;
+        background-color: $VeryPaleRed;
+        border-radius: $radius 0 0 $radius;
+        .tag {
+            width: max-content;
+            margin: 0 0.5em 0 0;
+            padding: 0.5em 1.5em;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        h4 {
+            width: 100%;
+            font-size: 0.9em;
+            font-weight: bold;
+            line-height: 1em;
+        }
+    }
+
+    .contents {
+        .contents-text {
+            font-size: 0.8em;
+            margin-bottom: 1.5em;
         }
     }
 }

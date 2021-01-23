@@ -16,7 +16,7 @@
         padding-right: 8vw;
         line-height: 1.5em;
         padding-bottom: 2em;
-        color: $DarkGrayishBlue;
+        color: $DarkGrayishBlue !important;
     }
     .page-left {
         display: flex;
@@ -51,6 +51,7 @@
             padding: 0;
             width: 92vw;
             margin: 0 auto;
+            height: auto;
         }
 
         .page-left {
@@ -61,23 +62,18 @@
             padding: 0;
             text-align: center;
             align-items: center;
+
             h1 {
                 font-size: 2.2em;
             }
             p {
                 font-size: 0.9em;
-                padding-bottom: 2em;
+                padding: 0 0 2em 0;
             }
 
             .button {
                 width: max-content;
             }
-        }
-
-        .page-right {
-            width: 92vw;
-            height: auto;
-            padding: 0;
         }
     }
 }
