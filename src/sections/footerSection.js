@@ -13,7 +13,28 @@ import {
 export default function Footer() {
     return (
         <footer className="footer">
-            <section>
+            <section className="input-goBtn-section">
+                <label htmlFor="input">
+                    <Input type="text" placeholder="Updates in your inbox…" />
+                </label>
+                <label htmlFor="button">
+                    <Button text="Go" />
+                </label>{" "}
+            </section>
+            <section className="quickLinks-ul-section">
+                <ul>
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
+                <ul>
+                    <li>Careers</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </section>
+            <section className="logos-section">
                 <div className="logo">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -47,26 +68,10 @@ export default function Footer() {
                     <FontAwesomeIcon icon={faInstagram} />
                 </div>
             </section>
-            <section>
-                <p>Home</p>
-                <p>Pricing</p>
-                <p>Products</p>
-                <p>About Us</p>
-            </section>
-            <section>
-                <p>Careers</p>
-                <p>Community</p>
-                <p>Privacy Policy</p>
-            </section>
-            <section>
-                <div>
-                    <Input type="text" placeholder="Updates in your inbox…" />
-                    <Button text="Go" />
-                </div>
-                <p className="footer-copyright">
-                    &copy; Copyright 2020. All Rights Reserved
-                </p>
-            </section>
+
+            <p className="footer-copyright">
+                &copy; Copyright 2020. All Rights Reserved
+            </p>
         </footer>
     );
 }

@@ -1,12 +1,10 @@
 .input {
     border-radius: $radius;
-    height: 3em;
-    width: 16em;
+    width: 20em;
     font-size: 0.8em;
-    margin-right: 1em;
     border: none;
     color: $BrightRed;
-    padding-left: 1em;
+    padding: 1em 2em;
 
     &:focus {
         outline: none;

@@ -3,45 +3,78 @@
     justify-content: space-between;
     padding: 8vh $desktop-padding-side;
     background: $VeryDarkBlue;
-    color: $VeryLightGray;
-    section {
-        display: flex;
-        flex-direction: column;
+    color: $DarkGrayishBlue;
 
-        p {
-            cursor: pointer;
-            transition: $transitionEl;
-            &:hover {
-                color: $BrightRed;
+    .input-goBtn-section {
+        display: flex;
+    }
+
+    .quickLinks-ul-section {
+        display: flex;
+        padding: 2em;
+
+        ul {
+            list-style: none;
+            line-height: 1.8em;
+            font-size: 0.8em;
+        }
+    }
+
+    .logos-section,
+    .social-logo {
+        display: flex;
+    }
+
+    .social-logo {
+        color: $VeryLightGray;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        padding: 2em 0;
+
+        .input-goBtn-section {
+            margin: 0 auto;
+            justify-content: space-between;
+            width: 84vw;
+
+            .input {
+                width: 100%;
             }
         }
 
-        &:first-child {
-            padding: 1em 0;
-            justify-content: space-between;
+        .quickLinks-ul-section {
+            justify-content: space-around;
+            margin: 0 auto;
+            padding: 2em 0;
+            width: 84vw;
+        }
+
+        .logos-section {
+            flex-direction: column-reverse;
+            width: 84vw;
+            margin: 0 auto;
+            // align-items: center;
+            .logo {
+                margin: 2em auto;
+                padding: 0;
+            }
 
             .social-logo {
-                display: flex;
                 justify-content: space-between;
-
-                svg {
-                    transition: 0.5s ease-in;
-                    cursor: pointer;
-                    &:hover {
-                        color: $BrightRed;
-                    }
-                }
+                font-size: 2em;
+                padding: 0.4em 0.2em;
             }
         }
 
-        &:last-child {
-            justify-content: space-between;
-            .footer-copyright {
-                color: $DarkGrayishBlue;
-                text-align: right;
-                font-size: 0.8em;
-                cursor: text;
-            }
+        .footer-copyright {
+            text-align: center;
+            font-size: 0.8em;
+            margin: 0;
+            padding: 0;
+            line-height: 0.8em;
         }
     }
 }
