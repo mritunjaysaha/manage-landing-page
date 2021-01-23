@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/buttons";
+import Image from "next/image";
 
 export default function LandingPage() {
     return (
@@ -12,7 +13,9 @@ export default function LandingPage() {
                 </p>
                 <Button text="Get Started" />
             </article>
-            <article className="landing page-right"></article>
+            <article className="landing page-right">
+                <Image src="/illustration-intro.svg" width={500} height={500} />
+            </article>
         </section>
     );
 }
