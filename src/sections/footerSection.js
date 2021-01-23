@@ -14,12 +14,20 @@ export default function Footer() {
     return (
         <footer className="footer">
             <section className="input-goBtn-section">
-                <label htmlFor="input">
-                    <Input type="text" placeholder="Updates in your inbox…" />
-                </label>
-                <label htmlFor="button">
-                    <Button text="Go" />
-                </label>{" "}
+                <div className="input-goBtn-div">
+                    <label htmlFor="input">
+                        <Input
+                            type="text"
+                            placeholder="Updates in your inbox…"
+                        />
+                    </label>
+                    <label htmlFor="button">
+                        <Button text="Go" />
+                    </label>
+                </div>
+                <p className="footer-copyright-p-desktop">
+                    &copy; Copyright 2020. All Rights Reserved
+                </p>
             </section>
             <section className="quickLinks-ul-section">
                 <ul>
@@ -69,7 +77,7 @@ export default function Footer() {
                 </div>
             </section>
 
-            <p className="footer-copyright">
+            <p className="footer-copyright-p">
                 &copy; Copyright 2020. All Rights Reserved
             </p>
         </footer>

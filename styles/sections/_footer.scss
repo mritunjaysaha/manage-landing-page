@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 8vh $desktop-padding-side;
     background: $VeryDarkBlue;
@@ -7,26 +8,54 @@
 
     .input-goBtn-section {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .input-goBtn-div {
+            display: flex;
+
+            .input {
+                margin-right: 1em;
+            }
+        }
+
+        .footer-copyright-p-desktop {
+            font-size: 0.8em;
+            text-align: right;
+        }
     }
 
     .quickLinks-ul-section {
         display: flex;
-        padding: 2em;
-
+        width: 100%;
+        margin: 0 8em;
+        justify-content: space-around;
         ul {
             list-style: none;
             line-height: 1.8em;
-            font-size: 0.8em;
+            font-size: 1em;
         }
     }
 
     .logos-section,
     .social-logo {
         display: flex;
+        justify-content: space-between;
     }
 
+    .logos-section {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+    }
     .social-logo {
         color: $VeryLightGray;
+        font-size: 1.5em;
+    }
+
+    .footer-copyright-p {
+        display: none;
     }
 }
 
@@ -40,8 +69,12 @@
             justify-content: space-between;
             width: 84vw;
 
-            .input {
-                width: 100%;
+            .footer-copyright-p-desktop {
+                display: none;
+            }
+
+            .input-goBtn-div {
+                justify-content: space-between;
             }
         }
 
@@ -58,6 +91,8 @@
             margin: 0 auto;
             // align-items: center;
             .logo {
+                display: flex;
+                justify-content: center;
                 margin: 2em auto;
                 padding: 0;
             }
@@ -69,7 +104,8 @@
             }
         }
 
-        .footer-copyright {
+        .footer-copyright-p {
+            display: block;
             text-align: center;
             font-size: 0.8em;
             margin: 0;
