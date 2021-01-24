@@ -67,7 +67,7 @@
         .input-goBtn-section {
             margin: 0 auto;
             justify-content: space-between;
-            width: 84vw;
+            width: 90%;
 
             .footer-copyright-p-desktop {
                 display: none;
@@ -75,6 +75,9 @@
 
             .input-goBtn-div {
                 justify-content: space-between;
+                .button {
+                    margin: 0;
+                }
             }
         }
 
@@ -82,12 +85,12 @@
             justify-content: space-around;
             margin: 0 auto;
             padding: 2em 0;
-            width: 84vw;
+            width: 90%;
         }
 
         .logos-section {
             flex-direction: column-reverse;
-            width: 84vw;
+            width: 90%;
             margin: 0 auto;
             // align-items: center;
             .logo {
