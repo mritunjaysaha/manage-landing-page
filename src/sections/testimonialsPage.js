@@ -47,7 +47,8 @@ function Testimonials() {
     }
 
     const responsive = {
-        0: { items: 2 },
+        0: { items: 1 },
+        600: { items: 2 },
     };
 
     const Carousel = () => (
