@@ -61,7 +61,7 @@
 @media only screen and (max-width: 767px) {
     .testimonials-page {
         width: 92vw;
-        padding: 0;
+        padding: 0 0 2em 0;
         margin: 0 auto;
 
         .header {
@@ -74,9 +74,31 @@
             margin: 4em 0 0 0;
             padding: 0 1em 1em 1em;
             font-size: 0.8em;
+
             p {
                 line-height: 1.8em;
             }
         }
+    }
+
+    .alice-carousel__dots {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .alice-carousel__dots-item:not(.__custom):hover,
+    .alice-carousel__dots-item:not(.__custom).__active {
+        background-color: $BrightRed !important;
+    }
+
+    .alice-carousel__dots-item:not(.__custom) {
+        border: 1px solid $BrightRed;
+        background-color: $VeryLightGray !important;
+    }
+
+    .alice-carousel__prev-btn-wrapper,
+    .alice-carousel__next-btn-wrapper {
+        display: none;
     }
 }
