@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./buttons";
+import Hamburger from "../sections/hamburger-menu";
+
 export default function Navbar() {
     return (
         <header>
@@ -15,6 +17,7 @@ export default function Navbar() {
                 </ul>
 
                 <Button text="Get Started" />
+                <Hamburger />
             </nav>
         </header>
     );

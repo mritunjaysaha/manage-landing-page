@@ -42,6 +42,10 @@
 
 @media only screen and (max-width: 767px) {
     .navbar {
+        margin-bottom: 2em;
+        margin: 0 auto;
+        padding: 0 1.5em;
+
         .navbar-mid-contents,
         .button {
             display: none;
