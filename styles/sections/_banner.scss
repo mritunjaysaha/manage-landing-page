@@ -20,3 +20,21 @@
         color: $VeryLightGray;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        background-image: url(../assets/bg-tablet-pattern.svg);
+        background-size: cover;
+        background-position-x: -18em;
+        background-position-y: 4em;
+
+        height: auto;
+        flex-direction: column;
+        padding: 4em 1em;
+        .banner-text {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0.5em;
+        }
+    }
+}
