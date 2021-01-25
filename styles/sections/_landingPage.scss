@@ -11,7 +11,7 @@
     p {
         font-size: 1.15em;
         padding-right: 8vw;
-        line-height: 1.5em;
+        line-height: 1.4em;
         padding-bottom: 2em;
         color: $DarkGrayishBlue !important;
     }
@@ -40,14 +40,14 @@
 @media only screen and (max-width: 992px) {
     .landing {
         height: auto;
-        padding: 0 2em;
+        padding: 2em;
 
         .page-left {
             padding: 0;
             height: auto;
 
             h1 {
-                line-height: 1em;
+                line-height: 1.4em;
                 font-size: 2em;
             }
         }

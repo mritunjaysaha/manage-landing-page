@@ -26,6 +26,26 @@
         padding: 12vh 8vw 10vw 0vw;
     }
 }
+@media only screen and (max-width: 992px) {
+    .about {
+        padding: 4em 2em;
+        h1 {
+            font-size: 2em;
+            line-height: 1.4em;
+        }
+
+        p {
+            font-size: 1.15em;
+            padding-top: 1em;
+            line-height: 1.4em;
+        }
+
+        .page-left,
+        .page-right {
+            padding: 0;
+        }
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .about {
