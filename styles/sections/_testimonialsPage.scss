@@ -58,7 +58,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
     .testimonials-page {
         width: 92vw;
         padding: 0 0 2em 0;
@@ -80,6 +80,30 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+    // .testimonials-page {
+    //     width: 92vw;
+    //     padding: 0 0 2em 0;
+    //     margin: 0 auto;
+
+    //     .header {
+    //         h3 {
+    //             padding-bottom: 1em;
+    //         }
+    //     }
+
+    //     .testimonials-cards-div {
+    //         margin: 4em 0 0 0;
+    //         padding: 0 1em 1em 1em;
+    //         font-size: 0.8em;
+
+    //         p {
+    //             line-height: 1.8em;
+    //         }
+    //     }
+    // }
 
     .alice-carousel {
         padding: 0;
