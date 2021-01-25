@@ -3,7 +3,7 @@ import Anchor from "../components/anchor";
 export default function Hamburger() {
     return (
         <section className="hamburger-section">
-            <div id="open-menu" className="hamburger-icon-div">
+            <div className="hamburger-icon-div">
                 <div></div>
                 <div></div>
                 <div></div>
