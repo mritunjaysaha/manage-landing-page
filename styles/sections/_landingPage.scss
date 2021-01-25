@@ -36,6 +36,33 @@
         // color: red;
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .landing {
+        height: auto;
+        padding: 0 2em;
+
+        .page-left {
+            padding: 0;
+            height: auto;
+
+            h1 {
+                line-height: 1em;
+                font-size: 2em;
+            }
+        }
+
+        .page-right {
+            width: 40vw;
+            height: auto;
+
+            img {
+                filter: drop-shadow(10px 15px 35px $BrightRedShadow);
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .page {
         width: 100vw;
