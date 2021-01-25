@@ -13,6 +13,7 @@ export default function Navbar() {
         const hamburgerMenuDiv = get(".hamburger-menu-div");
         const menu = get("#menu");
 
+        console.log(document.documentElement.clientWidth);
         menu.classList.add("open-menu");
         hamburgerIconDiv.style.display = "none";
         hamburgerCloseP.style.display = "block";
@@ -41,9 +42,11 @@ export default function Navbar() {
                     <div></div>
                     <div></div>
                 </div>
-                <div className="hamburger-close-div">&times;</div>
+                <div onClick={handleClose} className="hamburger-close-div">
+                    &times;
+                </div>
 
-                <div onClick={handleClose} className="hamburger-menu-div">
+                <div className="hamburger-menu-div">
                     <ul id="menu" className="navbar-mid-contents">
                         <li>
                             <Anchor name="pricing" link="#" />

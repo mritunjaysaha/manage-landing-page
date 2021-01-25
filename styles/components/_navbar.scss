@@ -25,6 +25,7 @@
         display: flex;
         flex-flow: row;
         li {
+            text-transform: capitalize;
             list-style: none;
             line-height: 1em;
             padding: 0.4em 1em;
@@ -37,10 +38,11 @@
             cursor: pointer;
             transition: $transitionEl;
             border-radius: 0.2em;
+            border: 1px solid transparent;
 
             &:hover {
-                background-color: $BrightRed;
-                color: $VeryLightGray;
+                background-color: $VeryPaleRed;
+                border: 1px solid $BrightRed;
             }
 
             &:first-child {
@@ -48,6 +50,32 @@
             }
             &:last-of-type {
                 margin-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        margin: 0;
+        padding: 0 2em;
+        align-items: center;
+        .logo {
+            width: 8em;
+        }
+        .button {
+            display: none;
+            padding: 0.8em 1em;
+            margin: 0;
+        }
+        .hamburger-menu-div {
+            .navbar-mid-contents {
+                li {
+                    vertical-align: middle;
+                    padding: 0.8em;
+                    margin: 0 0.4em;
+                    font-size: 0.9em;
+                }
             }
         }
     }
