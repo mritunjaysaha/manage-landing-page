@@ -12,12 +12,11 @@ export default function Navbar() {
         const hamburgerCloseP = get(".hamburger-close-div");
         const hamburgerMenuDiv = get(".hamburger-menu-div");
         const menu = get("#menu");
+
+        menu.classList.add("open-menu");
         hamburgerIconDiv.style.display = "none";
         hamburgerCloseP.style.display = "block";
         hamburgerMenuDiv.style.display = "block";
-
-        console.log({ menu });
-        menu.classList.add("open-menu");
     }
 
     function handleClose() {
@@ -26,10 +25,10 @@ export default function Navbar() {
         const hamburgerMenuDiv = get(".hamburger-menu-div");
         const menu = get("#menu");
 
+        menu.classList.remove("open-menu");
         hamburgerIconDiv.style.display = "flex";
         hamburgerCloseP.style.display = "none";
         hamburgerMenuDiv.style.display = "none";
-        menu.classList.remove("open-menu");
     }
 
     return (
