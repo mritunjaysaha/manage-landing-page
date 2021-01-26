@@ -9,27 +9,31 @@ export default function Navbar() {
 
     function handleMenu() {
         const hamburgerIconDiv = get(".hamburger-icon-div");
-        const hamburgerCloseP = get(".hamburger-close-div");
+        const hamburgerCloseDiv = get(".hamburger-close-div");
         const hamburgerMenuDiv = get(".hamburger-menu-div");
         const menu = get("#menu");
 
-        console.log(document.documentElement.clientWidth);
         menu.classList.add("open-menu");
+
         hamburgerIconDiv.style.display = "none";
-        hamburgerCloseP.style.display = "block";
+        hamburgerCloseDiv.style.display = "block";
         hamburgerMenuDiv.style.display = "block";
     }
 
     function handleClose() {
         const hamburgerIconDiv = get(".hamburger-icon-div");
-        const hamburgerCloseP = get(".hamburger-close-div");
+        const hamburgerCloseDiv = get(".hamburger-close-div");
         const hamburgerMenuDiv = get(".hamburger-menu-div");
         const menu = get("#menu");
 
+        console.log("close");
+
         menu.classList.remove("open-menu");
+
         hamburgerIconDiv.style.display = "flex";
-        hamburgerCloseP.style.display = "none";
+        hamburgerCloseDiv.style.display = "none";
         hamburgerMenuDiv.style.display = "none";
+        // menu.style.display = "none";
     }
 
     return (
@@ -43,9 +47,9 @@ export default function Navbar() {
                     <div></div>
                 </div>
                 <div onClick={handleClose} className="hamburger-close-div">
-                    &times;
+                    <div></div>
+                    <div></div>
                 </div>
-
                 <div className="hamburger-menu-div">
                     <ul id="menu" className="navbar-mid-contents">
                         <li>

@@ -113,8 +113,29 @@
         }
 
         .hamburger-close-div {
-            font-size: 3em;
-            padding-bottom: 0.2em;
+            display: none;
+            position: relative;
+            top: 0.5em;
+            width: 2em;
+            height: 2em;
+            opacity: 1;
+            z-index: 100;
+        }
+
+        .hamburger-close-div:before,
+        .hamburger-close-div:after {
+            position: absolute;
+            left: 1em;
+            content: " ";
+            height: 1.2em;
+            width: 0.2em;
+            background-color: $DarkBlue;
+        }
+        .hamburger-close-div:before {
+            transform: rotate(45deg);
+        }
+        .hamburger-close-div:after {
+            transform: rotate(-45deg);
         }
 
         .hamburger-menu-div {
